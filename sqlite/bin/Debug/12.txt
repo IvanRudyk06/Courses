@@ -1,0 +1,19 @@
+/*
+            SQLiteConnection m_dbConnection;
+            m_dbConnection =
+new SQLiteConnection("Data Source=School.db;Version=3;");
+            m_dbConnection.Open();
+            SQLiteCommand command = new SQLiteCommand(sSql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+            dataGridView1.ColumnCount = 2;
+            dataGridView1.RowCount = 10;
+            int i = 0;
+            while (reader.Read())
+            {
+                
+
+                dataGridView1[0, i].Value = reader["ID"].ToString().Trim();
+                dataGridView1[1, i].Value = reader["Назва"].ToString().Trim(); 
+                i++;
+            }
+            label1.Text = Convert.ToString(i);*/
